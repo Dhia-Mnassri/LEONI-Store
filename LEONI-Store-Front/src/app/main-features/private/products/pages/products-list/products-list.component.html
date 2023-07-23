@@ -1,17 +1,80 @@
 <div class="container-fluid">
   <br>
-  <div class="card">
-    <div class="card-header border-0 bg-default">
-      <div class="row">
-        <div class="col-12">
-          <h3 class="mb-0 text-white">Gestion des produits</h3>
+  <div class="row">
+    <div class="col-5">
+      <div class="card">
+        <div class="card-header border-0 bg-default">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-0 text-white">Liste des produits</h3>
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+            <tr>
+              <th class="th-sm">Image</th>
+              <th class="th-sm">Label</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <img class="img-thumbnail product-image" src="assets/img/croissant.jpeg"/>
+              </td>
+              <td>
+                <div class="d-flex flex-column">
+                  <h3>Croissant</h3>
+                  <h5 class="text-danger">2.200 DT</h5>
+                </div>
+            </tr>
+            </tbody>
+          </table>
+
         </div>
       </div>
     </div>
-    <div class="table-responsive">
-      <div class="py-3 d-flex justify-content-center align-items-center flex-column">
-        <img class="instruction" src="assets/img/instruction.svg" alt="instruction">
-        <h3>La page est en cours de développement</h3>
+    <div class="col-7">
+      <div class="card">
+        <div class="card-header border-0 bg-default">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-0 text-white">Ajout d'un produits</h3>
+            </div>
+          </div>
+        </div>
+        <form class="form-group px-3 py-3">
+          <div class="row">
+            <div class="col-6">
+              <label class="form-control-label">Label</label>
+              <input class="form-control" placeholder="Label" type="text">
+            </div>
+            <div class="col-6">
+              <label class="form-control-label">Prix</label>
+              <div class=" input-group input-group-merge">
+                <input class=" form-control" placeholder="Prix" type="number">
+                <div class=" input-group-append">
+                <span class=" input-group-text">
+                  DT
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12">
+              <label class="form-control-label">Image</label>
+              <input type="file" class="form-control">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+              <button type="submit" class="btn btn-default">Ajouter</button>
+              <button type="reset" class="btn btn-warning ml-3">Annuler</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>

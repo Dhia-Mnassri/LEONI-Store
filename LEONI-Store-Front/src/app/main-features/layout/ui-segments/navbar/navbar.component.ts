@@ -2,6 +2,7 @@ import { Component, OnInit, ElementRef } from "@angular/core";
 import { Router, Event, NavigationStart, NavigationEnd, NavigationError } from '@angular/router';
 
 import { Location} from "@angular/common";
+import {APP_ROUTING} from "../../../../core/config/route/APP_ROUTING";
 
 
 @Component({
@@ -18,6 +19,7 @@ export class NavbarComponent implements OnInit {
   sidenavOpen: boolean = true;
   connectedUser: any;
   user: any;
+  APP_ROUTING = APP_ROUTING;
 
   constructor(
     location: Location,
