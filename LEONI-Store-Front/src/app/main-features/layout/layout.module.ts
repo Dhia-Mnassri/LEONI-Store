@@ -6,6 +6,7 @@ import { NavbarComponent } from './ui-segments/navbar/navbar.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SidebarComponent } from './ui-segments/sidebar/sidebar.component';
 import { FooterComponent } from './ui-segments/footer/footer.component';
+import {SharedModule} from "../../shared/shared.module";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FooterComponent } from './ui-segments/footer/footer.component';
   ],
   imports: [
     CommonModule,
-    LayoutRoutingModule
+    LayoutRoutingModule,
+    SharedModule
   ]
 })
 export class LayoutModule { }
